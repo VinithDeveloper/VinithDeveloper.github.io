@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <title>portfolio</title>
+        <link rel="stylesheet" type="text/css" href="Grundeinstellungen.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="uebermich.css">
+        <link rel="stylesheet" href="skills.css">
+        <link rel="stylesheet" href="meineSprachen.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="Nightmode.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+    </head>
+
+
+<body>
+   
+     <label> <!--Nightmode-->
+    <input type="checkbox">
+    <span class="check"></span>
+</label>
+
+
+    <header>
+   
+        <div class="headertext">
+            <nav>
+                    <!--Checkbox für Navigationsleiste-->
+                   <input type="checkbox" id="toggle_button">
+                    <label for="toggle_button">
+                        <span class="material-symbols-rounded">menu</span>
+                    </label>
+                   <ul>
+                    <!--Navigationsbereich-->
+                    <li><a href="#uebermich_section">Über mich</a></li> <!--mit href navigiere ich den zum über mich Abschnitt-->
+                    <li><a href="#skill_section">Skills</a></li>
+                    <li><a href="">Hobbies</a></li>
+                    <li><a href="#footer-content">Mehr Informationen</a></li>
+                </ul>
+            </nav>
+            <!--Headertext-->
+            <h1>Vinith Chandrakumar, <br><span style="color: var(--main-brand-color);">Webentwickler</span></h1>
+            <p class="Beschreibung">Ich heisse Vinith Chandrakumar und bin ein angehender Schüler, 
+                der sich auf seinen Weg in die Welt der Informatik und Applikationsentwicklung gemacht hat. 
+                Ich besuche die Benedict Schule in Zürich, wo ich mich auf eine Karriere als Informatiker vorbereite. 
+                Ich habe mich für diesen Bereich entschieden, weil es mich fasziniert, 
+                wie Computer und Technologie unser Leben beeinflussen und verbessern können. </p>
+        </div>
+
+        <!-- Portfoliofoto (img) und Kreislayout im div class-->
+        <div class="Kreis">
+            <img src="images/Foto2.jpeg" alt="Portfolio Foto">
+        </div>
+    </header>
+    
+    
+    <section id="uebermich_section">
+        <img src="images/IMG_1441.jpg" alt="über mich Sektion Foto">
+        <div class="uebermich_container">
+            <h2> Über mich</h2>
+            <p> 
+
+                In meiner Freizeit treibe ich gerne Boxen da ich ein grosser Kampfsportfan insbesondere Mixed Martial Arts und Boxen. 
+                Dieser Sport erfordert sowohl körperliche als auch mentale Stärke und hilft mir, 
+                mich selbst zu fordern und zu verbessern. Ich finde es auch sehr befriedigend, 
+                meine Fähigkeiten und meine Ausdauer zu verbessern. <br><br>
+            
+                Ich bin auch ein begeisterter Gamer. Ich liebe es, 
+                in die Welt der Spiele einzutauchen und mich in verschiedene Charaktere und Abenteuer zu versetzen. 
+                Gaming hilft mir, meine Kreativität und mein problemlösendes Denken zu trainieren und ist eine gute Möglichkeit für mich,
+                 mich zu entspannen und abzuschalten.<br><br>
+                
+                 Eine meiner großen Leidenschaften ist die Webentwicklung. 
+                 Ich finde es faszinierend, wie man mit verschiedenen Programmiersprachen und Technologien eine Website 
+                 oder Anwendung erstellen kann. Ich liebe es, an der Front-End-Entwicklung zu arbeiten und daran zu arbeiten, 
+                 wie eine Website aussieht und sich anfühlt, aber ich bin auch an Back-End-Entwicklung interessiert, 
+                 um die Funktionalität einer Website zu optimieren. </p>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <div id="spalten">
+    <section id="skill_section">
+
+        <div class="skill">
+            <h1 id="meineSkills">Meine Skills</h1>
+
+            <li><h3>C++</h3>
+                <span class="bar"><span class="Cplus"></span></span>
+            </li>
+            
+            <li><h3>Javascript</h3>
+                <span class="bar"><span class="Javascript"></span></span>
+            </li>
+            
+            <li><h3>HTML</h3>
+                <span class="bar"><span class="HTML"></span></span>
+            </li>
+            
+            <li><h3>CSS</h3>
+                <span class="bar"><span class="CSS"></span></span>
+            </li>
+            
+            <li><h3>Photoshop</h3>
+                <span class="bar"><span class="Photoshop"></span></span>
+            </li>
+            
+            <li><h3>Microsoft Office</h3>
+                <span class="bar"><span class="Microsoft"></span></span>
+            </li>
+           
+          </section> 
+
+          <section id="Sprachen_section">
+            <div class="Sprache">
+            
+            <!--sprachen-->
+            <h1 id="meineSprachen">Meine Sprachen</h1>
+
+            <li><h3>Deutsch</h3>
+                <span class="bar2"><span class="deutsch"></span></span>
+            </li>
+            
+            <li><h3>Englisch</h3>
+                <span class="bar2"><span class="englisch"></span></span>
+            </li>
+            
+            <li><h3>Tamilisch</h3>
+                <span class="bar2"><span class="tamilisch"></span></span>
+            </li>
+            
+            <li><h3>Italienisch</h3>
+                <span class="bar2"><span class="italienisch"></span></span>
+            </li>
+        </div>
+            </section>
+        </div>
+   
+
+
+    <section></section>
+   <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <h3>Kontaktdaten</h3>
+            <p>Meine E-Mail: Chandrakumar.Vinith@bene.edu.ch</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-mail"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+
+</body>
+</html>

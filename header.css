@@ -1,0 +1,108 @@
+/*Das ist der ganze headerbereich*/
+header{
+    padding: 70px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /*Skalierbarkeit vom Bild wird verschoben. nicht mehr rechts vom text sonder unterhalb*/
+}
+
+/*Über mich-Dienstleistungen-mehr Informationen*/
+.headertext{
+    width: 850px;
+}
+/* Kreislayout für das Foto*/
+.Kreis {
+    height: 400px;
+    width: 400px;
+    /*Skalierbarkeit wird angepasst */
+    max-height: 80vw;
+    max-width: 80vw;
+
+    overflow: hidden;
+    border-radius: 50%;
+    border: 20px solid var(--main-brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hier wird das Bild das im div class Kreis ist bearbeitet*/
+.Kreis img {
+    width: 100%;
+    
+}
+
+/*Navigationsleiste*/
+nav{
+    margin-bottom: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+nav a{
+    color: var(--secondary-text-color);
+    text-decoration: none; 
+    position: relative;
+    padding: 3px;  
+}
+
+nav a:hover {
+    color: var(--text-color);
+}
+
+/*Unterstrich von den Navigationsleiste*/
+nav a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out; /*transitiondauer vom Anzeigen der Nav-leiste*/
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+#toggle_button{
+    display: none;
+}
+label[for= "toggle_button"]{ 
+    display: none;
+}
+
+/*Handy modus*/
+label[for= "toggle_button"] span{ 
+    font-size: 40px;
+}
+
+
+@media(max-width: 800px){
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--secondary-text-color);
+        padding: 15px;
+        border-radius: 0 0 25px 0;
+    }
+    nav ul{
+        display: none;
+    }
+    #toggle_button:checked ~ ul{
+        display: flex;
+        flex-direction: column;
+    }
+    label[for= "toggle_button"]{ 
+        display: block;
+    }
+    
+}
